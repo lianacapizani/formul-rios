@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+.container {
+  background-color: #ffff;
+  border-radius: 6px;
+  width: 390px;
+  height: 440px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: 650;
+  font-size: 22px;
+}
+
+.form {
+  margin: 5px auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.form-control {
+  background-color: #f6f3f3;
+  border: none;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #5a5959;
+  padding: 10px;
+}
+
+input {
+  height: 48px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  height: 110px;
+}
+
+/* Para cultar o label padrão xx/xx/xx */
+.data {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Para colocar nova label  */
+
+.data::before {
+  content: "Selecione uma data";
+  position: absolute;
+  color: #817e7e;
+  background-color: #f6f3f3;
+}
+
+.icon {
+  font-size: 20px;
+  color: #646363;
+  position: relative;
+  top: -40px;
+  left: 340px;
+}
+
+.btn {
+  background-color: #18b29a;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-top: -20px;
+  cursor: pointer;
+}
